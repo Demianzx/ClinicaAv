@@ -1,14 +1,22 @@
 import React from 'react';
-
-import './App.css';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import AgregarCita from './components/AgregarCita';
+import Contacto from './components/Contacto';
+import Inicio from './components/Inicio';
+import Tratamientos from './components/Tratamientos';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Hola mundo
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/nueva-cita" component={AgregarCita}/>
+        <Route exact path="/contacto" component={Contacto}/>
+        <Route exact path="/inicio" component={Inicio}/>
+        <Route exact path="/tratamientos" component={Tratamientos}/>
+      </Switch>
+    </Router>
   );
 }
 
