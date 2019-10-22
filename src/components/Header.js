@@ -6,7 +6,7 @@ import './Header.css'
 
 const Header =()=>(
     <Fragment>
-    <img src={banner} className="header-logo"/>
+    <img src={banner} className="header-logo" alt="Banner"/>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
             <Link to="/inicio" className="Navbar-brand">
