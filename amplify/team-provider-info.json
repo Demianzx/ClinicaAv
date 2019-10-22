@@ -1,0 +1,19 @@
+{
+    "react": {
+        "awscloudformation": {
+            "AuthRoleName": "clinicaav-web-react-20191017184511-authRole",
+            "UnauthRoleArn": "arn:aws:iam::687010938050:role/clinicaav-web-react-20191017184511-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::687010938050:role/clinicaav-web-react-20191017184511-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "clinicaav-web-react-20191017184511-deployment",
+            "UnauthRoleName": "clinicaav-web-react-20191017184511-unauthRole",
+            "StackName": "clinicaav-web-react-20191017184511",
+            "StackId": "arn:aws:cloudformation:us-east-1:687010938050:stack/clinicaav-web-react-20191017184511/291bc860-f138-11e9-abdb-1207b4ca758c"
+        },
+        "categories": {
+            "auth": {
+                "cognito220b83a0": {}
+            }
+        }
+    }
+}

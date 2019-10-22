@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {Link,NavLink} from 'react-router-dom';
+import banner from '../images/banner.png';
+import './Header.css'
+
 
 const Header =()=>(
+    <Fragment>
+    <img src={banner} className="header-logo"/>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
             <Link to="/inicio" className="Navbar-brand">
@@ -28,5 +33,6 @@ const Header =()=>(
             </div>
         </div>
     </nav>
+    </Fragment>
 );
 export default Header;

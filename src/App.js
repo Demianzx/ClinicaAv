@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom';
 import AgregarCita from './components/AgregarCita';
 import Contacto from './components/Contacto';
 import Inicio from './components/Inicio';
@@ -15,6 +15,7 @@ function App() {
         <Route exact path="/contacto" component={Contacto}/>
         <Route exact path="/inicio" component={Inicio}/>
         <Route exact path="/tratamientos" component={Tratamientos}/>
+        <Route exact path="/" render={() => <Redirect to="/inicio" />} />
       </Switch>
     </Router>
   );

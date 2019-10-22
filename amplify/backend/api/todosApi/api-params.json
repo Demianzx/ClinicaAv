@@ -1,0 +1,45 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "todosLamda",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/POST",
+                    "/GET"
+                ]
+            }
+        }
+    ],
+    "resourceName": "todosApi",
+    "apiName": "todosApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "todosLamda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "clinicaav-web-react-20191017184511-authRole",
+        "unAuthRoleName": "clinicaav-web-react-20191017184511-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "todosLamda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

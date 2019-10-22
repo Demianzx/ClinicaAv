@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import imgServicios from '../images/Servicios.png';
 
 function Tratamientos () {
     return(
-    <h1 className="text-center"> Tratamientos</h1>
+    <Fragment>
+        <img width="100%" src={imgServicios} alt="Card image cap" />
+    </Fragment>
     )
 }
 export default Tratamientos;

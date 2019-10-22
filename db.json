@@ -1,0 +1,37 @@
+{
+    "pacientes" :[
+        {
+            
+            "nombres" : "Ricardo",
+            "apellidoP" : "Aragon",
+            "apellidoM" : "Solis",
+            "email": "demianz999@hotmail.com",
+            "telefono" : "+526181480442",
+            "nacimiento": "28/05/1993",
+            "sexo": "Masculino",
+            "especialidad" : "General",
+            "tratamiento" : "Limpieza",
+            "fecha" : "28/12/2021" , 
+            "id":1          
+        },
+        {
+            
+            "nombres" : "Marcianito",
+            "apellidoP" : "Peranguito",
+            "apellidoM" : "Olonguito",
+            "email": "123@hotmail.com",
+            "telefono" : "+12345789231",
+            "nacimiento": "28/05/1956",
+            "sexo": "Masculino",
+            "especialidad" : "General",
+            "tratamiento" : "Limpieza",
+            "fecha" : "28/12/2021" , 
+            "id":2          
+        }
+    ],
+    "tratamientos" :[
+        {
+            "tratamiento" : "Cirugía Maxilofacial"
+        }
+    ]
+}
