@@ -1,11 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom';
 import AgregarCita from './components/AgregarCita';
-import Contacto from './components/Contacto';
-import Inicio from './components/Inicio';
-import Tratamientos from './components/Tratamientos';
+import Contacto from './Pages/Contacto';
+import Inicio from './Pages/Inicio';
+import Tratamientos from './Pages/Tratamientos';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 
 function App() {
   return (
