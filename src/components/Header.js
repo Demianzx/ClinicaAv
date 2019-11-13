@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import {Link} from 'react-router-dom';
 import {Navbar,Nav,NavDropdown,Form,Button,FormControl} from 'react-bootstrap'
 
 
@@ -13,9 +14,9 @@ const Header =()=>(
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-            <Nav.Link href="/inicio">Inicio</Nav.Link>
-            <Nav.Link href="/tratamientos">Tratamientos</Nav.Link>
-            <Nav.Link href="/contacto">Contacto</Nav.Link>
+            <Link to="/inicio" className="mr-1 mt-2">Inicio</Link>
+            <Link to="/tratamientos" className="mr-1 mt-2">Tratamientos</Link>
+            <Link to="/contacto" classNAme="mr-1 mt-2">Contacto</Link>
             <NavDropdown title="Servicios" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Servicio 1</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Servicio 2</NavDropdown.Item>
